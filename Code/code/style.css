@@ -1,0 +1,815 @@
+/* Add your styles here */
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+html,body{
+    height: 100%;
+    scroll-behavior:smooth;
+}
+*{
+    margin:0px;
+    border: 0px;
+    text-decoration: blink;
+}
+
+section{
+    padding: 100px 0;
+}
+
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    
+}
+/**//**//**//**//**//**//**//**//**//**//**//**//**/
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.about, .stratumpage, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.Stratum-context     .project-content,
+.skills .skills-content,
+.education .education-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logoimg {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: floatInwards1 1s forwards;
+}
+
+@keyframes floatInwards1 {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.navbar .logo {
+   margin: auto;
+}
+.navbar .logo a{
+    color: #341400;
+    font-size: 35px;
+    font-weight: 600;
+    animation: floatInwards1 1s forwards;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: peachpuff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    animation: floatInwards1 1s forwards;
+}
+.navbar .menu li a{
+    display: block;
+    color: #341400;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: peachpuff;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #341400;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #341400;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+/**//**//**//**//**/
+.home{
+    display: flex;
+    background: url("img.jpg") no-repeat center ;
+    height: 100vh;
+    color: #1e0808;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+  text-shadow: 0 0 5px white;
+  animation: floatInwards2 1s forwards;
+}
+
+@keyframes floatInwards2 {
+  0% {
+    opacity: 0;
+    transform: translate(0, +100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+  text-shadow: 0 0 10px white;
+  animation: floatInwards2 1.75s forwards;
+}
+
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+  text-shadow: 0 0 5px white;
+  animation: floatInwards2 2.5s forwards;
+}
+
+
+
+.home .home-content .text-3 span {
+  color: crimson;
+  font-weight: 500;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+.about .title::before{
+    content: "";
+    background: crimson;
+}
+
+.about .about-content .left{
+    width: 55%;
+}
+
+.about .about-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .left .text span{
+    color: crimson;
+}
+
+.about .about-content .right{
+    width: 45%;
+}
+
+.about .about-content .right .div-block {
+    overflow: hidden;
+    background-color: transparent;
+}
+ .hallwayimg{
+    padding-left: 60px;
+ }
+
+
+
+
+/**//**//**//**//**//**//**/
+.stratumpage{
+    font-family: 'Arial', sans-serif;
+    padding-top: 0px;
+    display: flex;
+    height: 110%;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(194, 152, 78);
+}
+.Stratum-heading{
+    
+    display: flex;
+    padding-top: 80px;
+    width: 100%;
+    height: 17.5%;
+    justify-content: space-evenly;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(73, 38, 9);
+}
+.Stratum-context{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Stratum-context{
+    justify-content: space-between; /* move flex items away from each other horizontally */
+    align-items: center;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: stretch;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    color: rgb(73, 38, 9);
+    
+}
+
+.Stratum-flexbox1 {
+    margin-left: 50px;
+    height: fit-content;
+    float: right;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    border: 3px solid rgb(73, 38, 9);
+}
+
+.Stratum-flexbox1:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+.Stratum-link {
+  text-decoration: none;
+  cursor: pointer;
+  color:rgb(73, 38, 9);
+}
+
+.Stratum-link:hover {
+  cursor: pointer;
+  text-decoration: none; /* Remove underline on hover */
+  color:rgb(255, 255, 255);
+}
+
+.Stratum-databox{
+    border-bottom: 1px solid rgb(73, 38, 9);
+    font-size:25px;
+
+}
+
+.Stratum-flexbox2{
+    margin-top:0px;
+    margin-left:55px;
+    height: fit-content;
+    float: left;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    
+}
+.Stratum-flexbox2:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+.Stratum-databox{
+    border-bottom: 1px solid rgb(73, 38, 9) auto;
+}
+
+.Stratum-flexbox3 {
+  margin-top: 0px;
+  margin-left: 90px;
+  height: fit-content;
+  align-items: center;
+  text-align: center;
+  float: left;
+  width: 70%;
+  
+}
+.Stratum-flexbox3:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.image-container {
+  position: relative;
+}
+
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {
+  opacity: 0.7;
+  cursor: zoom-in; /* Change the cursor style on hover */
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.Stratum-databox{
+    border-bottom: 1px solid rgb(73, 38, 9);
+}
+
+.Stratum-flexbox4{
+    margin-top:0px;
+    margin-left:115px;
+    height: fit-content;
+    float: left;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    border: 3px solid rgb(73, 38, 9);
+}
+.Stratum-flexbox4:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+.Stratum-databox{
+    border-bottom: 1px solid rgb(73, 38, 9);
+}
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+.contact{
+    
+    padding-top: 50px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+}
+
+.contactpg-title{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(73, 38, 9);
+    border-bottom: 2px solid rgb(73, 38, 9);
+}
+
+.contactpg-content{
+    height: 67%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: center;
+}
+.dummy{
+    width:10%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.subcontent{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(73, 38, 9);
+    color: rgb(194, 152, 78);
+}
+.contactpg-text{
+    font-size: 25px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.contactpg-img{
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.contactpg-img img{
+    padding: 30px;
+}
+
+.contactpg-img img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.contactpg-bottom{
+    font-family: 'Arial', sans-serif;
+    color: rgb(194, 152, 78);
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid rgb(73, 38, 9);
+}
+
+.endmsg{
+    padding-left:41%;
+    padding-right: 40%;
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    color: rgb(73, 38, 9);
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+@media screen and (max-width: 1100px) {
+
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+    }
+
+    .about .about-content .left,
+    .about .about-content .right {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .about .about-content .right img {
+        width: 100%;
+    }
+    .hallwayimg {
+    padding-left: 0px;
+    }
+
+    .stratumpage{
+        height: auto;
+    }
+    .stratumpage .Stratum-context {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height:140%;
+    }
+
+    .Stratum-flexbox1,
+    .Stratum-flexbox2,
+    .Stratum-flexbox3,
+    .Stratum-flexbox4 {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .contact .contactpg-content {
+        display:flex ;
+    }
+
+    .contact .contactpg-content .dummy {
+        display: none;
+    }
+
+    .contact .contactpg-content .subcontent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        flex-direction: column;
+
+    }
+    .contact .contactpg-content .subcontent .dummy2{
+        width: 100%;
+        height: 200px;
+    }
+    .contact .contactpg-content .subcontent .contactpg-text {
+        padding: 0 20px;
+    }
+
+    .contact .contactpg-content .subcontent .contactpg-img {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .contactpg-content .subcontent .contactpg-img img {
+        padding: 10px;
+    }
+
+    .contact .contactpg-content .dummy,
+    .contact .contactpg-bottom {
+        height: 20px;
+    }
+
+    .contact .contactpg-bottom .endmsg {
+        padding-left:41%;
+        padding-right: 40%;
+    }
+}
+
+@media screen and (max-width: 902px) {
+    .max-width{
+        width: auto;
+    }
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .menu-btn {
+        display: block;
+    }
+
+    .navbar.active .menu {
+        display: block;
+    }
+
+    .navbar .menu li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar .logo{
+        position: absolute;
+        right: 10px;
+        top:27px;
+        
+    }
+
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+    }
+
+    .about .about-content .left,
+    .about .about-content .right {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .about .about-content .right img {
+        width: 100%;
+    }
+    .hallwayimg {
+        padding-left: 0px;
+    }
+
+    .stratumpage{
+        height: auto;
+        width: auto;
+    }
+    .stratumpage .Stratum-context {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height:140%;
+    }
+
+    .Stratum-flexbox1,
+    .Stratum-flexbox2,
+    .Stratum-flexbox3,
+    .Stratum-flexbox4 {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .contact .contactpg-content {
+        flex-direction: column;
+    }
+
+    .contact .contactpg-content .dummy {
+        display: none;
+    }
+
+    .contact .contactpg-content .subcontent {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .contact .contactpg-content .subcontent .contactpg-text {
+        padding: 0 20px;
+    }
+
+    .contact .contactpg-content .subcontent .contactpg-img {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .contactpg-content .subcontent .contactpg-img img {
+        padding: 10px;
+    }
+
+    .contact .contactpg-content .dummy,
+    .contact .contactpg-bottom {
+        height: 20px;
+    }
+
+    .contact .contactpg-bottom .endmsg {
+        padding-left:36%;
+        padding-right: 40%;
+    }
+}

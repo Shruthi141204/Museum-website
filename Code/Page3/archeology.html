@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="First html page">
+  <meta name="keywords" content="HTML5, tags">
+  <meta name="author" content="abc">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style1.css">
+  <title>NS MUSEUM</title>
+  <style>
+    #map {
+      position: relative;
+      padding-top: 75px;
+    }
+
+    #info {
+      position: absolute;
+      top: 2000px;
+      right: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      display: none;
+    }
+
+    #info-image {
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    #info-text {
+      margin-top: 10px;
+    }
+
+    /* Customize styles as desired */
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logoimg">
+        <a href="../code/mainpage.html"><img src="../image/icons8-back-arrow-100.png" height="50%" alt=""></a>
+      </div>
+      <div class="logo"><a href="#">Historical<span> Museum</span></a></div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#Stratum" class="menu-btn">Stratum</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">"Beneath the Surface: Unveiling the Soul's Treasure"</div>
+        <div class="text-2">
+          The Classics Artifacts of the World
+        </div>
+        <div class="text-3">"Unearthing the Past: Global Archaeological Discoveries"... <span class="typing"></span></div>
+        <a href="#about">Scroll Down</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">Artifacts Around the World</h2>
+      <div class="about-content">
+        <div class="column left">
+          <div class="text">""Captivating Chronicles: Treasures Unveiled"
+            <span class="typing-2"></span>
+          </div>
+          <p>What is it?:<br>&emsp;&emsp;
+            Artifacts are objects or items that hold historical, cultural, or artistic significance. They are typically created or used by humans in the past and are considered valuable for their connection to a particular time period, civilization, or event. Artifacts can range from ancient tools, pottery, and weapons to religious artifacts, artwork, and even technological devices. They provide valuable insights into human history, helping us understand the past, explore different cultures, and preserve our collective heritage.
+            <br><br>
+            What you will find:<br>&emsp;&emsp;
+            In here,you can find a wide variety of objects from different time periods and cultures,A Symphony of Ages, Embracing Diverse Tales, Time's Canvas, Culture's Palimpsest, Frozen Moments, Cultural Visions, Treasures Transcending Time; let ur eyes unveil the past.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <SECTION class="stratumpage" id="Stratum">
+ <div id="points-container">
+  <div id="point1" class="point" data-info="Made by: Grayson Perry :- Vase, earthenware, white body, coil built, of ovoid form with narrow neck, with underglaze incised and stamped decoration, and designs painted in blue on a bright yellow ground, with a transparent craquelé glaze. Beneath the designs run slip-trailed linear motifs in pink echoing the cracks on an antique pot. The designs incorporate imagery inspired by objects in the British Museum, including the Museum as a Tree of Life inscribed up the stem 'Story of the World', Cultural Diplomacy'; and Merchandising Opportunities' on a tree house at the top. Signed towards the base of the body with Grayson Perry's punning potter's mark, imitating a silver hallmark: a crowned letter 'W' above an anchor." data-image="rosettavase.jpg" onclick="showModal(this)"></div>
+
+      <div id="point2" class="point" data-info="Discovered  1799
+Discovered by Pierre-François Bouchard:- The Rosetta Stone is a stele composed of granodiorite inscribed with three versions of a decree issued in Memphis, Egypt, in 196 BC during the Ptolemaic dynasty on behalf of King Ptolemy V Epiphanes. The top and middle texts are in Ancient Egyptian using hieroglyphic and Demotic scripts respectively, while the bottom is in Ancient Greek. The decree has only minor differences between the three versions, making the Rosetta Stone key to deciphering the Egyptian scripts.
+The stone was carved during the Hellenistic period and is believed to have originally been displayed within a temple, possibly at Sais. It was probably moved in late antiquity or during the Mamluk period, and was eventually used as building material in the construction of Fort Julien near the town of Rashid (Rosetta) in the Nile Delta." data-image="rosettastone.jpg" onclick="showModal(this)"></div>
+
+      <div id="point3" class="point" data-info="The Priest-King, in Pakistan often King-Priest, is a small male figure sculpted in steatite found during the excavation of the ruined Bronze Age city of Mohenjo-daro in Sindh, Pakistan, in 1925–26. It is dated to around 2000–1900 BCE, in Mohenjo-daro's Late Period, and is the most famous stone sculpture of the Indus Valley civilization. The statuette is carved in the soft mineral of steatite, and (despite being apparently unfinished) has been fired or baked at over 1000 °C to harden it. The long crack running down the right hand side of the face, already present when it was excavated, may have been caused by this, or by a later shock. There is an uneven break at the bottom of the piece, with the patterned robe continuing further down at the back than the front. The nose is also damaged at the tip, but many other areas are in good condition" data-image="Harappa.jpg" onclick="showModal(this)"></div>
+
+      <div id="point4" class="point" data-info="Excavated by: Howard Carter:- The tomb of Tutankhamun, also known by its tomb number, KV62, is the burial place of Tutankhamun (reigned c. 1334–1325 BC), a pharaoh of the Eighteenth Dynasty of ancient Egypt, in the Valley of the Kings.Like other pharaohs, Tutankhamun was buried with a wide variety of funerary objects and personal possessions, such as coffins, furniture, clothing and jewelry, though in the unusually limited space these goods had to be densely packed." data-image="Tutankhamun.jpg" onclick="showModal(this)"></div>
+
+      <div id="point5" class="point" data-info="The Elgin Marbles are a collection of Ancient Greek sculptures from the Parthenon and other structures from the Acropolis of Athens, removed from Ottoman Greece to Britain by agents of Thomas Bruce, 7th Earl of Elgin, and now held in the British Museum. The majority of the sculptures were created in the 5th century BCE under the direction of sculptor and architect Phidias." data-image="elgin-marbles.jpg" onclick="showModal(this)"></div>
+
+      <div id="point6" class="point" data-info="The Terracotta Army is a collection of terracotta sculptures depicting the armies of Qin Shi Huang, the first emperor of China. It is a form of funerary art buried with the emperor in 210–209 BCE with the purpose of protecting him in his afterlife.
+The figures, dating from approximately the late 200s BCE, were discovered in 1974 by local farmers in Lintong County, outside Xi'an, Shaanxi, China. The figures vary in height according to their rank, the tallest being the generals. The figures include warriors, chariots and horses. Estimates from 2007 were that the three pits containing the Terracotta Army hold more than 8,000 soldiers, 130 chariots with 520 horses, and 150 cavalry horses, the majority of which remain in situ in the pits near Qin Shi Huang's mausoleum." data-image="teracotta.jpg" onclick="showModal(this)"></div>
+
+      <div id="point7" class="point" data-info="Writing Mostly Hebrew; Aramaic, Greek, and Nabataean-Aramaic
+Created Est. 3rd century BCE to 1st century CE
+Discovered  1946/47–1956:-The Dead Sea Scrolls (also the Qumran Caves Scrolls) are ancient Jewish religious manuscripts discovered between 1946 and 1956 at the Qumran Caves in what was then Mandatory Palestine, near Ein Feshkha in the West Bank, on the northern shore of the Dead Sea. Dating from the 3rd century BCE to the 1st century CE, the Dead Sea Scrolls are considered to be a keystone in the history of archaeology with great historical, religious, and linguistic significance because they include the oldest surviving manuscripts of entire books later included in the biblical canons, along with deuterocanonical and extra-biblical manuscripts which preserve evidence of the diversity of religious thought in late Second Temple Judaism. " data-image="DeadSeaScrolls.jpg" onclick="showModal(this)"></div>
+
+      <div id="point8" class="point" data-info="The first skeleton of Tyrannosaurus rex was discovered in 1902 in Hell Creek, Montana, by the Museum's famous fossil hunter Barnum Brown. Six years later, Brown discovered a nearly complete T. rex skeleton at Big Dry Creek, Montana. The rock around it was blasted away with dynamite to reveal a “magnificent specimen” with a “perfect” skull. This skeleton, AMNH 5027, is on view in the Museum's Hall" data-image="Trex.jpg" onclick="showModal(this)"></div>
+
+      <div id="point9" class="point" data-info="Moai are monolithic human figures carved by the Rapa Nui people on Rapa Nui (Easter Island) in eastern Polynesia between the years 1250 and 1500.The moai are monolithic statues, and their minimalist style reflects forms found throughout Polynesia. Moai are carved from volcanic tuff (solidified ash). The human figures would be outlined in the rock wall first, then chipped away until only the image was left. The over-large heads (a three-to-five ratio between the head and the trunk, a sculptural trait consistent with the Polynesian belief in the sanctity of the chiefly head) have heavy brows and elongated noses with a distinctive fish-hook-shaped curl of the nostrils. The lips protrude in a thin pout. Like the nose, the ears are elongated and oblong in form. The jaw lines stand out against the truncated neck. The torsos are heavy, and, sometimes, the clavicles are subtly outlined in stone. The arms are carved in bas relief and rest against the body in various positions, hands and long slender fingers resting along the crests of the hips, meeting at the hami (loincloth), with the thumbs sometimes pointing towards the navel. Generally, the anatomical features of the backs are not detailed," data-image="Moai.jpg" onclick="showModal(this)"></div>
+
+      <div id="point10" class="point" data-info="Andean mummies were usually arranged in a fetal position and wrapped in layers of leather or cloth to form bundles. For the Inca in particular, Heaney says, that stillness and solidity was believed to give the mummies their ability to move through time and continue to shape the lives of the living." data-image="IncaMummy.jpg" onclick="showModal(this)"></div>
+
+      <div id="point11" class="point" data-info="The Pergamon Altar (Ancient Greek: Βωμός τῆς Περγάμου) was a monumental construction built during the reign of the Ancient Greek King Eumenes II in the first half of the 2nd century BC on one of the terraces of the acropolis of Pergamon in Asia Minor.
+The structure was 35.64 metres wide and 33.4 metres deep; the front stairway alone was almost 20 metres wide. The base was decorated with a frieze in high relief showing the battle between the Giants and the Olympian gods known as the Gigantomachy. There was a second, smaller and less well-preserved high relief frieze on the inner court walls which surrounded the actual fire altar on the upper level of the structure at the top of the stairs. In a set of consecutive scenes, it depicts events from the life of Telephus, legendary founder of the city of Pergamon and son of the hero Heracles and Auge, one of Tegean king Aleus's daughters.
+In 1878, the German engineer Carl Humann started official excavations on the acropolis of Pergamon, an effort that lasted until 1886. The relief panels from the Pergamon Altar were subsequently transferred" data-image="PergamonAlter.jpg" onclick="showModal(this)"></div>
+
+      <div id="point12" class="point" data-info="Smilodon is a genus of the extinct machairodont subfamily of the felids. It is one of the best known saber-toothed predators and one of the most famous prehistoric mammals. Although commonly known as the saber-toothed tiger, it was not closely related to the tiger or other modern cats. Smilodon lived in the Americas during the Pleistocene epoch (2.5 mya – 10,000 years ago). During the 1830s, Danish naturalist Peter Wilhelm Lund and his assistants collected fossils in the calcareous caves near the small town of Lagoa Santa, Minas Gerais, Brazil. Among the thousands of fossils found, he recognized a few isolated cheek teeth as belonging to a hyena, which he named Hyaena neogaea in 1839. After more material was found (including canine teeth and foot bones), Lund concluded the fossils instead belonged to a distinct genus of felid, though transitional to the hyenas." data-image="Sabertooth.jpg" onclick="showModal(this)"></div>
+
+      <div id="point13" class="point" data-info="Discovered by  Charles Phillips:- The Sutton Hoo helmet is a decorated Anglo-Saxon helmet found during a 1939 excavation of the Sutton Hoo ship-burial. It was buried around the years c. 620–625 CE and is widely associated with an Anglo-Saxon leader, King Rædwald of East Anglia;[1] its elaborate decoration may have given it a secondary function akin to a crown. The helmet was both a functional piece of armour that would have offered considerable protection if ever used in warfare, and a decorative, prestigious piece of extravagant metalwork. An iconic object from an archaeological find hailed as the British Tutankhamen, it has become a symbol of the Early Middle Ages, of Archaeology in general, and of England." data-image="SuttonHooHelmet.jpg" onclick="showModal(this)"></div>
+  <!-- Add more points as needed -->
+</div>
+  <div id="myModal" class="modal">
+          <span class="close" onclick="hideModal()">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    
+    <!-- Add more points as needed -->
+  </div>
+</section>
+<script>
+    var currentModalData = {};
+
+    function showModal(element) {
+      var info = element.getAttribute("data-info");
+      var imageSrc = element.getAttribute("data-image");
+
+      currentModalData.info = info;
+      currentModalData.imageSrc = imageSrc;
+
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+
+      modalImg.src = imageSrc;
+      captionText.innerHTML = info;
+      modal.style.display = "block";
+    }
+
+    function hideModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="First html page">
+  <meta name="keywords" content="HTML5, tags">
+  <meta name="author" content="abc">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>NS MUSEUM</title>
+  <style>
+    #map {
+      position: relative;
+      padding-top: 75px;
+    }
+
+    #info {
+      position: absolute;
+      top: 2400px;
+      right: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      display: none;
+    }
+
+    #info-image {
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    #info-text {
+      margin-top: 10px;
+    }
+
+    /* Customize styles as desired */
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logoimg">
+        <a href="../code/mainpage.html"><img src="../image/icons8-back-arrow-100.png" height="50%" alt=""></a>
+      </div>
+      <div class="logo"><a href="#">Historical<span> Museum</span></a></div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#Stratum" class="menu-btn">Stratum</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Our First Stop to,</div>
+        <div class="text-2">
+          The Brushstrokes of the Globe
+        </div>
+        <div class="text-3">Unveiling the Beauty: A Glimpse into the Artist's Soul; where Art and History Collides... <span class="typing"></span></div>
+        <a href="#about">Scroll Down</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">Arts Around the World</h2>
+      <div class="about-content">
+        <div class="column left">
+          <div class="text">"Every artist dips his brush in his own soul, and paints his own nature into his pictures." - Henry Ward Beecher
+            <span class="typing-2"></span>
+          </div>
+          <p>What is it?:<br>&emsp;&emsp;
+            The arts, in their various forms, have played a significant role in human civilization for centuries. They encompass a wide range of creative expressions, including visual arts, performing arts, literature, music, architecture, and more. Throughout history, different cultures and regions have developed their unique artistic traditions, reflecting their values, beliefs, and social structures.
+            <br><br>
+            What you will find:<br>&emsp;&emsp;
+            In here, we bring to you the into the world of the most sought for and the most famous paintings from across the globe;<br> where The purpose of art will wash the dust of daily life off your souls.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <SECTION class="stratumpage" id="Stratum">
+    <div id="map">
+      <img src="Map.jpg" alt="World Map" usemap="#map-areas" height="700px" width="1000px">
+      <map name="map-areas">
+
+        <area shape="poly" coords="661,190,680,189,684,211,712,226,737,219,700,333,677,333,639,241,639,220" alt="India" data-info=" Shakuntala by  Raja Ravi Varma:
+        Shakuntala was created by Raja Ravi Varma in 1870. We see Shakuntala, from Mahabharat, eagerly looking back on the pretext of removing a thorn from her foot.  She is searching for her husband Dushyant. The painting captures the expressions and body languages of Shakuntala and her companions, aptly." data-image="India.jpg">
+
+       <area shape="poly" coords="687,139,744,163,756,119,816,154,794,187,790,262,741,261,736,228,704,221,680,188,662,180" alt="China" data-info=" Fan Kuan, Travelers Among Mountains and Streams, Northern Song dynasty, Early 11th century
+       Widely considered one of the great masterpieces of Chinese landscape painting (in Chinese, literally “Mountain and Water Painting”), Fan Kuan’s Travelers influenced countless generations of painters and still impresses viewers to this day with its sublime depiction of nature." data-image="China.jpg">
+
+        <area shape="poly" coords="498,182,569,215,614,286,603,395,536,528,469,361,410,258,440,204" alt="Africa" data-info="Extensive Landscape Northern Transvaal by Jacob Hendrik Pierneef :Extensive Landscape Northern Transvaal is another classic example that shows Jacob was intrigued by structural design. This piece of art also stands out in the list of African abstract paintings as the first to ever break the one-hundred rank auction mark in South Africa." data-image="Africa.jpg">
+
+        <area shape="poly" coords="327,4,385,17,350,54,344,166,260,252,241,330,147,138,97,101,,142,58,216,50" alt="North Amrica" data-info="The Veteran in a New Field (1865) by Winslow Homer: Few conflicts have had such a long-lasting impact on American society as the Civil War. This famous American artwork quickly gained popularity for its depiction of post-war existence in a modest, yet beautiful field of wheat. Homer depicts a tired trooper who has shifted his attention away from battle and back to cultivation in 1865, following Lee’s defeat at Appomattox." data-image="NorthAmerica.jpg">
+
+        <area shape="poly" coords="456,158,484,164,463,197,454,192,454,173,449,165" alt="Spain" data-info="Guernica is a large 1937 oil painting by Spanish artist Pablo Picasso. It is one of his best-known works, regarded by many art critics as the most moving and powerful anti-war painting in history.It is exhibited in the Museo Reina Sofía in Madrid." data-image="Spain.jpg">
+
+        <area shape="poly" coords="526,170,538,170,538,194,525,192" alt="Greece" data-info="The Fall of Phaeton (1605) by Peter Paul Rubens: The image illustrates the ancient Greek story of Phaeton, a frequent motif in visual arts, and was painted by artist Peter Paul Rubens. Phaeton was the son of Clymene and Helios. Helios vowed to offer him everything he desired if he provided proof that he was actually his son." data-image="Greece.jpg">
+
+        <area shape="poly" coords="826,151,848,155,842,206,814,221,806,204,827,180" alt="Japan" data-info="Kawanabe Kyosai was one of the most prominent Japanese artists of the Edo period. His art was influenced  by the work of Tohaku, a Kano artist of the sixteenth century who was the only artist of his period to paint  screens entirely in ink on a delicate background of powdered gold." data-image="Japan.jpg">
+
+        <area shape="poly" coords="467,95,485,115472,138,458,113" alt="UK" data-info="The Fighting Temeraire, JMW Turner, National Gallery.The painting depicts the 98-gun HMS Temeraire, one of the last second-rate ships of the line to have played a role in the Battle of Trafalgar, being towed up the Thames by a paddle-wheel steam tug in 1838, towards its final berth in Rotherhithe to be broken up for scrap." data-image="UK.jpg">
+
+        <area shape="poly" coords="472,132,498,137,494,167,462,144" alt="France" data-info="The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as the best known, the most visited, the most written about, the most sung about, and the most parodied work of art in the world." data-image="France.jpg">
+
+
+      </map>
+    </div>
+
+    <div id="info">
+      <img id="info-image" src="" alt="Info Image">
+      <div id="info-text"></div>
+    </div>
+  </SECTION>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var mapAreas = document.getElementsByTagName("area");
+      var infoDiv = document.getElementById("info");
+      var infoImage = document.getElementById("info-image");
+      var infoText = document.getElementById("info-text");
+
+      for (var i = 0; i < mapAreas.length; i++) {
+        mapAreas[i].addEventListener("mouseover", function(event) {
+          var altText = event.target.getAttribute("alt");
+          var info = event.target.getAttribute("data-info");
+          var imageSrc = event.target.getAttribute("data-image");
+
+          infoText.textContent = info;
+          infoImage.src = imageSrc;
+          infoDiv.style.display = "block";
+        });
+
+        mapAreas[i].addEventListener("mouseout", function() {
+          infoDiv.style.display = "none";
+        });
+      }
+    });
+  </script>
+
+  
+</body>
+</html>
